@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		FC2E1953287C4E1D0040F12A /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E1952287C4E1D0040F12A /* UpcomingCollectionViewCell.swift */; };
 		FC2E1955287C4E340040F12A /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E1954287C4E340040F12A /* NowPlayingCollectionViewCell.swift */; };
+		FC7F2501287D962F0000448E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7F2500287D962F0000448E /* Movie.swift */; };
+		FC7F2513287DA8100000448E /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7F2512287DA8100000448E /* Movie+NowPlaying.swift */; };
+		FC7F2515287DA8140000448E /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7F2514287DA8140000448E /* Movie+Popular.swift */; };
+		FC7F2517287DA8150000448E /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7F2516287DA8150000448E /* Movie+TrendingThisWeek.swift */; };
+		FC7F2519287DA8170000448E /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7F2518287DA8170000448E /* Movie+TrendingToday.swift */; };
+		FC7F251B287DA8190000448E /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7F251A287DA8190000448E /* Movie+Upcoming.swift */; };
 		FC8533DD287A285800836AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8533DC287A285800836AFD /* AppDelegate.swift */; };
 		FC8533DF287A285800836AFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8533DE287A285800836AFD /* SceneDelegate.swift */; };
 		FC8533E1287A285800836AFD /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8533E0287A285800836AFD /* FeaturedViewController.swift */; };
@@ -23,6 +29,12 @@
 /* Begin PBXFileReference section */
 		FC2E1952287C4E1D0040F12A /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC2E1954287C4E340040F12A /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC7F2500287D962F0000448E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FC7F2512287DA8100000448E /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
+		FC7F2514287DA8140000448E /* Movie+Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
+		FC7F2516287DA8150000448E /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
+		FC7F2518287DA8170000448E /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
+		FC7F251A287DA8190000448E /* Movie+Upcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
 		FC8533D9287A285800836AFD /* PressPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8533DC287A285800836AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC8533DE287A285800836AFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +79,28 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		FC7F2502287D96370000448E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC7F2500287D962F0000448E /* Movie.swift */,
+				FC7F2514287DA8140000448E /* Movie+Popular.swift */,
+				FC7F2512287DA8100000448E /* Movie+NowPlaying.swift */,
+				FC7F2516287DA8150000448E /* Movie+TrendingThisWeek.swift */,
+				FC7F2518287DA8170000448E /* Movie+TrendingToday.swift */,
+				FC7F251A287DA8190000448E /* Movie+Upcoming.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC7F250F287DA7A50000448E /* SuppotingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FC8533EA287A285A00836AFD /* Info.plist */,
+				FC8533E5287A285A00836AFD /* Assets.xcassets */,
+			);
+			name = SuppotingFiles;
+			sourceTree = "<group>";
+		};
 		FC8533D0287A285800836AFD = {
 			isa = PBXGroup;
 			children = (
@@ -88,10 +122,10 @@
 			children = (
 				FC8533DC287A285800836AFD /* AppDelegate.swift */,
 				FC8533DE287A285800836AFD /* SceneDelegate.swift */,
+				FC7F2502287D96370000448E /* Model */,
 				FC2E194D287C47720040F12A /* View */,
 				FC2E194E287C477B0040F12A /* Controllers */,
-				FC8533E5287A285A00836AFD /* Assets.xcassets */,
-				FC8533EA287A285A00836AFD /* Info.plist */,
+				FC7F250F287DA7A50000448E /* SuppotingFiles */,
 				FC8533F0287A2ABB00836AFD /* SF-Pro-Display-Bold.otf */,
 				FC8533F1287A2ABB00836AFD /* SF-Pro-Display-Light.otf */,
 			);
@@ -171,9 +205,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7F2501287D962F0000448E /* Movie.swift in Sources */,
 				FC8533E1287A285800836AFD /* FeaturedViewController.swift in Sources */,
+				FC7F2519287DA8170000448E /* Movie+TrendingToday.swift in Sources */,
+				FC7F2515287DA8140000448E /* Movie+Popular.swift in Sources */,
+				FC7F251B287DA8190000448E /* Movie+Upcoming.swift in Sources */,
 				FC8533DD287A285800836AFD /* AppDelegate.swift in Sources */,
 				FC2E1955287C4E340040F12A /* NowPlayingCollectionViewCell.swift in Sources */,
+				FC7F2517287DA8150000448E /* Movie+TrendingThisWeek.swift in Sources */,
+				FC7F2513287DA8100000448E /* Movie+NowPlaying.swift in Sources */,
 				FC8533DF287A285800836AFD /* SceneDelegate.swift in Sources */,
 				FC8533F5287A446B00836AFD /* PopularCollectionViewCell.swift in Sources */,
 				FC2E1953287C4E1D0040F12A /* UpcomingCollectionViewCell.swift in Sources */,
