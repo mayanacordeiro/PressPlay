@@ -60,6 +60,7 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "upcomingCell", for: indexPath) as? UpcomingCollectionViewCell
             cell?.titleLabel.text = upcomingMovies[indexPath.item].title
             cell?.image.image = UIImage(named: upcomingMovies[indexPath.item].poster)
+            cell?.dateLabel.text = upcomingMovies[indexPath.item].releaseDate
             return cell ?? UICollectionViewCell()
         } else {
             return UICollectionViewCell()
