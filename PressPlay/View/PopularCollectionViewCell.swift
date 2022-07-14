@@ -9,7 +9,12 @@ import UIKit
 
 class PopularCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    func setup(title:String, image: UIImage) {
+        titleLabel.text = title
+        imageView.image = image
+    }
     
 }

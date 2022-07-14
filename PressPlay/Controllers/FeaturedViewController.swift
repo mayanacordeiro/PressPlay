@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class FeaturedViewController: UIViewController {
     
     let popularMovies = Movie.popularMovies()
     let nowPlayingMovies = Movie.nowPlayingMovies()
@@ -29,43 +29,15 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource, UICo
         
         upcomingCollectionView.dataSource = self
         upcomingCollectionView.delegate = self
+
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == self.popularCollectionView {
-            return popularMovies.count
-        } else if collectionView == self.nowPlayingCollectionView {
-            return nowPlayingMovies.count
-        } else if collectionView == self.upcomingCollectionView {
-            return upcomingMovies.count
-        } else {
-            return 0
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailsViewController {
+            let movie = sender as? Movie
+            destination.movie = movie
         }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == self.popularCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell
-            cell?.titleLabel.text = popularMovies[indexPath.item].title
-            cell?.image.image = UIImage(named: popularMovies[indexPath.item].backdrop)
-                return cell ?? UICollectionViewCell()
-        } else if collectionView == self.nowPlayingCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "nowPlayingCell", for: indexPath) as? NowPlayingCollectionViewCell
-            cell?.titleLabel.text = nowPlayingMovies[indexPath.item].title
-            cell?.image.image = UIImage(named:  nowPlayingMovies[indexPath.item].poster)
-            cell?.dateLabel.text = nowPlayingMovies[indexPath.item].releaseDate
-            return cell ?? UICollectionViewCell()
-        } else if collectionView == self.upcomingCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "upcomingCell", for: indexPath) as? UpcomingCollectionViewCell
-            cell?.titleLabel.text = upcomingMovies[indexPath.item].title
-            cell?.image.image = UIImage(named: upcomingMovies[indexPath.item].poster)
-            cell?.dateLabel.text = upcomingMovies[indexPath.item].releaseDate
-            return cell ?? UICollectionViewCell()
-        } else {
-            return UICollectionViewCell()
-        }
-        
     }
     
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1BF48528809FED002612E0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BF48428809FED002612E0 /* DetailsViewController.swift */; };
+		FC1BF4872880A309002612E0 /* FeaturedViewController+CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BF4862880A309002612E0 /* FeaturedViewController+CollectionViewDelegate.swift */; };
 		FC2E1953287C4E1D0040F12A /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E1952287C4E1D0040F12A /* UpcomingCollectionViewCell.swift */; };
 		FC2E1955287C4E340040F12A /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2E1954287C4E340040F12A /* NowPlayingCollectionViewCell.swift */; };
 		FC7F2501287D962F0000448E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7F2500287D962F0000448E /* Movie.swift */; };
@@ -24,9 +26,12 @@
 		FC8533F2287A2ABB00836AFD /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC8533F0287A2ABB00836AFD /* SF-Pro-Display-Bold.otf */; };
 		FC8533F3287A2ABB00836AFD /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC8533F1287A2ABB00836AFD /* SF-Pro-Display-Light.otf */; };
 		FC8533F5287A446B00836AFD /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8533F4287A446B00836AFD /* PopularCollectionViewCell.swift */; };
+		FC9CEB13288094C300C4D48B /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9CEB12288094C300C4D48B /* FeaturedViewController+UICollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1BF48428809FED002612E0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FC1BF4862880A309002612E0 /* FeaturedViewController+CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+CollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		FC2E1952287C4E1D0040F12A /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC2E1954287C4E340040F12A /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC7F2500287D962F0000448E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		FC8533F0287A2ABB00836AFD /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "/Library/Fonts/SF-Pro-Display-Bold.otf"; sourceTree = "<absolute>"; };
 		FC8533F1287A2ABB00836AFD /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Light.otf"; path = "/Library/Fonts/SF-Pro-Display-Light.otf"; sourceTree = "<absolute>"; };
 		FC8533F4287A446B00836AFD /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC9CEB12288094C300C4D48B /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				FC8533E0287A285800836AFD /* FeaturedViewController.swift */,
+				FC9CEB12288094C300C4D48B /* FeaturedViewController+UICollectionViewDataSource.swift */,
+				FC1BF48428809FED002612E0 /* DetailsViewController.swift */,
+				FC1BF4862880A309002612E0 /* FeaturedViewController+CollectionViewDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -209,12 +218,15 @@
 				FC8533E1287A285800836AFD /* FeaturedViewController.swift in Sources */,
 				FC7F2519287DA8170000448E /* Movie+TrendingToday.swift in Sources */,
 				FC7F2515287DA8140000448E /* Movie+Popular.swift in Sources */,
+				FC9CEB13288094C300C4D48B /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
 				FC7F251B287DA8190000448E /* Movie+Upcoming.swift in Sources */,
 				FC8533DD287A285800836AFD /* AppDelegate.swift in Sources */,
 				FC2E1955287C4E340040F12A /* NowPlayingCollectionViewCell.swift in Sources */,
 				FC7F2517287DA8150000448E /* Movie+TrendingThisWeek.swift in Sources */,
 				FC7F2513287DA8100000448E /* Movie+NowPlaying.swift in Sources */,
 				FC8533DF287A285800836AFD /* SceneDelegate.swift in Sources */,
+				FC1BF4872880A309002612E0 /* FeaturedViewController+CollectionViewDelegate.swift in Sources */,
+				FC1BF48528809FED002612E0 /* DetailsViewController.swift in Sources */,
 				FC8533F5287A446B00836AFD /* PopularCollectionViewCell.swift in Sources */,
 				FC2E1953287C4E1D0040F12A /* UpcomingCollectionViewCell.swift in Sources */,
 			);
